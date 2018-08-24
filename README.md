@@ -11,7 +11,7 @@ This twitter challenge contain code that can retrieve user data after authentica
 	jQuery       			: v1.10.2
 	FPDF 	     			: v1.81
 	Twitter API  			: v1.1 
-	Google API 	 			: v2.0
+	Google API 	 		: v2.0
 	Sentiment Analyser 		: v1.0
 
 #### DEMO :
