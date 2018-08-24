@@ -1,0 +1,95 @@
+.navbar-form .input-group {
+ display: inline-table;
+    vertical-align: middle;
+    width: 24% !important;
+    margin-left: 51px !important;
+    float: right !important;
+	
+}
+.navbar-inverse
+{
+	border:none;
+}
+@media(max-width: 640px){
+	.navbar-form .input-group {
+		width: 100%;
+     margin-left: 0px;
+	}
+}
+
+.tweet_btn
+{
+	border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 20px 6px 20px;
+    position: relative;
+    text-align: center;
+	color:#1da1f2;
+	margin:10px 50px 5px 20px;
+	background-color:#fff;
+
+}
+.score_count
+{
+		color:#fff;
+		background-color: rgba(8,160,233,0.5);
+		padding:5px 10px 10px 10px;margin:-5px;"
+}
+
+.search_text_box
+{
+	//border-radius: 100px;
+}
+
+.backgroundImage
+{
+	//background-color: rgba(8,160,233,0.5);
+	color:#fff;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height:150px;
+	padding:10px;
+}
+.backblurimage{filter: blur(0px) ;z-index: -1;}
+footer 
+{
+	background-color: #fff;
+	color: black;
+	padding: 15px;
+	font-size: large;
+
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.navbar-inverse {
+	background-color: #08a0e9;
+	border-color: #08a0e9;
+	color: #000000;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+	font-weight: bold;
+    line-height: 20px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #fff;
+	font-weight: bold;
+}
+
+.user_name
+{
+    font-size:10px;
+    color :rgba(0,0,0,0.5);
+}
+
+.follower-hover:hover{
+    background-color:rgba(0,0,0,0.1);
+}

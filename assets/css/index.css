@@ -1,0 +1,92 @@
+.index_body
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url("../img/bgcolor.png");
+}
+
+.header
+{
+	text-align:center;
+	height: 50px;
+	width:100%;
+    background-color:#1da1f2;
+    padding: 10px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: larger;
+    border-bottom: 1px solid #1598ff;
+}
+
+.login-box
+{
+    margin: 10px;
+    padding: 0px;
+    padding-left: 10px;
+    font-size: large;
+    border-radius: 5px;
+    color: rgba(116, 120, 122, 0.8);
+    border: 5px solid rgba(212, 212, 212, 0.5);
+    background: rgba(255, 255, 255,0.8);
+}
+
+.login-box ol{
+    font-size: small;
+}
+.login-box ol li{
+    margin: 5px;
+}
+.login{
+	margin:0 auto;
+    text-align: center;
+}
+.login a:hover{
+	color:#fff;
+	background:#198dd4;
+	text-decoration:none;
+}
+.login a{
+	transition:all 0.5s;
+    text-align: center;
+    border: 1px solid #5aacff;
+    padding: 10px 50px;
+    background-color: #1da1f2;
+    border-radius: 2px;
+	margin-top:200px;
+	display:inline-block;
+	color:#fff;
+}
+
+a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer{
+    width: 100%;
+    font-weight: bold;
+    font-size: medium;
+    border-top: 1px solid #D3D3D3;
+    background-color: #fff;
+    text-align: center;
+	padding:15px 0px 5px 0px;
+}
+.footer a{
+    color:#1da1f2;
+    text-decoration: none;
+}
+
+@media only screen 
+and (min-device-width : 200px) 
+and (max-device-width : 767px) {
+	
+.login a{
+	margin:50px 0px;
+}	
+.footer a{
+	font-size:15px;
+}	
+}
