@@ -7,7 +7,7 @@
  
  >**Email       : spsrga176@gmail.com**
  
- >**Follow   :  [Facebook](https://www.facebook.com/SurajSingh176) | [Twitter](https://twitter.com/Suraj_Kr_Singh) | [Linkedin](https://www.linkedin.com/in/suraj-kumar-singh/) | [Github](https://github.com/5uraj/) | [Hackrank](https://www.hackerrank.com/singh_surajkumar)** 
+ >**Follow   :  [Facebook](https://www.facebook.com/SurajSingh176) | [Twitter](https://twitter.com/Suraj_Kr_Singh) | [Linkedin](https://www.linkedin.com/in/suraj-kumar-singh/) | [Github](https://github.com/5uraj/) | [Hackerrank](https://www.hackerrank.com/singh_surajkumar)** 
 
 >#### INTRODUCTION :
 This twitter challenge contain code that can retrieve user data after authentication by RestApi service of Twitter and also analyse the sentiment of  tweet (like Positive , Negative , Neutral).User can download the tweets and followers list for given user name and also can move that data on google drive too .
