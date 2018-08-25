@@ -1,4 +1,6 @@
 ![alt text](https://scrutinizer-ci.com/g/5uraj/Twitter-Challenge/badges/quality-score.png?b=master)
+![alt text](https://scrutinizer-ci.com/g/5uraj/Twitter-Challenge/badges/build.png?b=master)
+![alt text](https://scrutinizer-ci.com/g/5uraj/Twitter-Challenge/badges/code-intelligence.svg?b=master)
 
 ## Twitter challenge ([My Twitter Application](https://surajkrsingh.000webhostapp.com/Twitter/))
  >**Author      : Suraj kumar singh**
@@ -7,7 +9,7 @@
  
  >**Follow   :  [Facebook](https://www.facebook.com/SurajSingh176) | [Twitter](https://twitter.com/Suraj_Kr_Singh) | [Linkedin](https://www.linkedin.com/in/suraj-kumar-singh/) | [Github](https://github.com/5uraj/) | [Hackrank](https://www.hackerrank.com/singh_surajkumar)** 
 
-
+>#### INTRODUCTION :
 This twitter challenge contain code that can retrieve user data after authentication by RestApi service of Twitter and also analyse the sentiment of  tweet (like Positive , Negative , Neutral).User can download the tweets and followers list for given user name and also can move that data on google drive too .
 
 >#### THIRD-PARTY USED LIBRARIES :
