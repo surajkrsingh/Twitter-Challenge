@@ -5,7 +5,7 @@
 
 This twitter challenge contain code that can retrieve user data after authentication by RestApi service of Twitter and also analyse the sentiment of  tweet (like Positive , Negative , Neutral).User can download the tweets and followers list for given user name and also can move that data on google drive too .
 
-#### USED LIBRARIES :
+#### THIRD-PARTY USED LIBRARIES :
 
 	Bootstrap    			: v3.3.7
 	jQuery       			: v1.10.2
