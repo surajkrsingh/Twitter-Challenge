@@ -1,15 +1,4 @@
 <?php
-/**
- * @version 1.0
- * @package  Twitter Challenge
- * @category PHP
- * @author   Suraj kumar Singh <spsrga@gmail.com>
- * @since    24-08-2018
- * @link     https://surajkrsingh.000webhostapp.com/Twitter/
- *
- * This is home page(main page) where display all the information of user.
- *
- **/
 session_start();
 error_reporting(0);
 include_once("includes/config.php");
@@ -96,6 +85,11 @@ if(isset($_REQUEST['btnDownload']))
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand"href="home.php">
                     <span><img src="assets/img/twitter-logo.png" width="30" height="30"/></span><span>Twitter</span>
                 </a>
@@ -205,7 +199,7 @@ if(isset($_REQUEST['btnDownload']))
 							
 						<div class="alert alert-success alert-dismissable">
 							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-							<strong>Sucessfully</strong> Your file is backuped in drive !. 
+							<strong>Sucessfully</strong> Your file is uploaded on drive !. 
 							<a href="https://www.google.com/drive/" class="alert-link" target="_blank">Goto Google drive</a>
 						</div>
 					<?php			
@@ -308,12 +302,14 @@ if(isset($_REQUEST['btnDownload']))
 						$counter=0;	
 						//print_r($following->users[1]->name);
 						while($counter < count($follower->users)) {
-							echo '<p>
-							<span class="list-group-item follower-hover">'.
+						$screen_name = $follower->users[$counter]->screen_name;
+							echo '<p>';
+                            printf('<a href= "#" onClick="getAutoSuggest(\'%s\');">', $screen_name);
+							echo '<span class="list-group-item follower-hover">'.
 							'<img src='.$follower->users[$counter]->profile_image_url.' class="img-circle" width="30" height="30"/>'
 							."  ".$follower->users[$counter]->name;'</span>
-							</p>';
-							echo '<span class="user_name"> @'.$follower->users[$counter]->screen_name;'</span>';
+							</a></p>';
+							echo '<span class="user_name"> @'.$screen_name;'</span>';
 							$counter = $counter + 1;
 						}	
 					}
@@ -376,7 +372,6 @@ if(isset($_REQUEST['btnDownload']))
 				</div>
 				<div class="col-sm-6">
 					<input type="text"  class="form-control ftxt" placeholder="Enter File Name" name="file_name">
-					<button type="button" class="btn btn-primary tweet_btn" data-dismiss="modal">Cancel</button>
 				</div>
 				
 				<div class="col-sm-6 text-right">
