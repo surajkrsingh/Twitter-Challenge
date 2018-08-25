@@ -1,11 +1,14 @@
-## Twitter challenge (My Twitter Application)
- Author : Suraj kumar singh
+## Twitter challenge ([My Twitter Application](https://surajkrsingh.000webhostapp.com/Twitter/))
+ >**Author      : Suraj kumar singh**
  
- Email  : spsrga176@gmail.com
+ >**Email       : spsrga176@gmail.com**
+ 
+ >**Follow   :  [Facebook](https://www.facebook.com/SurajSingh176) | [Twitter](https://twitter.com/Suraj_Kr_Singh) | [Linkedin](https://www.linkedin.com/in/suraj-kumar-singh/) | [Github](https://github.com/5uraj/) | [Hackrank](https://www.hackerrank.com/singh_surajkumar)** 
+
 
 This twitter challenge contain code that can retrieve user data after authentication by RestApi service of Twitter and also analyse the sentiment of  tweet (like Positive , Negative , Neutral).User can download the tweets and followers list for given user name and also can move that data on google drive too .
 
-#### THIRD-PARTY USED LIBRARIES :
+>#### THIRD-PARTY USED LIBRARIES :
 
 	Bootstrap    			: v3.3.7
 	jQuery       			: v1.10.2
@@ -14,11 +17,11 @@ This twitter challenge contain code that can retrieve user data after authentica
 	Google API 	 		: v2.0
 	Sentiment Analyser 		: v1.0
 
-#### LIVE DEMO :
+>#### LIVE DEMO :
 
 [https://surajkrsingh.000webhostapp.com/Twitter/](https://surajkrsingh.000webhostapp.com/Twitter/)
 	
-#### QUICK START :
+>#### QUICK START :
 
  - Visit https://surajkrsingh.000webhostapp.com/Twitter/
  - Click on login to twitter (This page lead you to twitter, where you have to authorise this application to go further).
@@ -33,7 +36,7 @@ This twitter challenge contain code that can retrieve user data after authentica
  - It is also possible to take backup of followers (upto 75000) and tweets(upto 3200) in google drive (Have to authenticate with google ).
  - In home click on any download it will give a option to be download in particular format.
  
-#### DIRETORY STRUCTURE :
+>#### DIRETORY STRUCTURE :
  
  - Twitter
 	- Assets
@@ -54,14 +57,16 @@ This twitter challenge contain code that can retrieve user data after authentica
 		- google_lib (Google Auth Libraray)
 		- Sentiment Analysis
 
-#### HOW TO SETUP | RUN
+>#### HOW TO SETUP | RUN
    - Download [this](https://github.com/5uraj/Twitter-Challenge) github  repo.
-   - Change the authenticate info in config.php
+   - Create a Twitter developer account  from [here](https://developer.twitter.com/en/apps)and get app authentication details.
+   - Change the authenticate info in config.php .
    
             define('CONSUMER_KEY', "PUT_CONSUMER_KEY_OF_YOUR_TWITTER_APP");
 	        define('CONSUMER_SECRET', 'PUT_CONSUMER_SECRET_OF_YOUR_TWITTER_APP');
-	        define('OAUTH_CALLBACK', 'PUT_CALLBACK_URL_OF_YOUR_TWITTER_APP');
-	    
+	        define('OAUTH_CALLBACK', 'PUT_CALLBACK_URL_OF_YOUR_TWITTER_APP')
+		
+   - Create a Google developer account  from [here](https://console.cloud.google.com/apis/)and get drive access authentication details.
    - Set the Google Authentication Info in followersUploader.php and  tweetsUploader.php file
       	
 	    	$client = new Google_Client();
@@ -79,7 +84,11 @@ This twitter challenge contain code that can retrieve user data after authentica
    
    	        
    
-#### ADDTIONAL TASK  :  
+>#### ADDTIONAL TASK  :  
    - ##### Sentiment Analyser 
         - The sentiment analyse libaray is taken from the https://github.com/NickDuncanZA/php-sentiment-analyser and modfied the required funtion according the need of this project.
         - Sentiment analyse is classified the tweet as Positive or Negative or Neutral.
+	
+
+	
+##### Thanks for visit...
