@@ -25,32 +25,35 @@ if(isset($connection))
 	$user = $_REQUEST['screen_name'];
 	$fileName=$user."_tweets.csv";
 	$path='assets/tmp_data/'.$fileName;
-	$tweets = $connection->get("statuses/user_timeline", ["screen_name"=>$user,"count" => 3200]);
-	$fp = fopen($path, 'a');
-	$data = array("Name", "Username", "Tweets", "CreatedOn");
-	fputcsv($fp, $data);
-	$id ="";
-	while (true) {
-		if(isset($tweets->errors) || $id ==null)
+	$fp = fopen($filename, 'a');
+    $data = array("Name", "Username", "Tweets", "CreatedOn");
+    fputcsv($fp, $data);
+    $tweets = $connection->get("statuses/user_timeline", ["screen_name"=>$user,"count" => 3200]);
+    $id ="";
+    while (true) {
+        if(isset($tweets->errors) && $id =="")
         {
-				//If time is exeeds then move to upload
-				fclose($fp);
-            	$_SESSION['fileName']=$fileName;
-            	header("location:tweetsUploader.php");
-            	
-		}else{
-			foreach ($tweets as $temp) {	
-				$data = array(
-					$temp->user->name,
-					'@' . $temp->user->screen_name,
-					$temp->text,
-					$temp->created_at
-				);
-				fputcsv($fp, $data);	
-				 $id = isset($temp->id_str)?$temp->id_str:null;
-			}
-			$tweets = $connection->get("statuses/user_timeline", ["screen_name"=>$user,"count" => 3200, "max_id" => $id]);
-		}		
-	}
+            echo "Sry , try again after 15 min...";
+            break;
+        }else{
+            foreach ($tweets as $temp) {
+                $data = array(
+                    $temp->user->name,
+                    '@' . $temp->user->screen_name,
+                    $temp->text,
+                    $temp->created_at
+                );
+                fputcsv($fp, $data);
+                $id = isset($temp->id_str)?$temp->id_str:null;
+            }
+            if ($id == null) {
+                break;
+            }
+        }
+        $tweets = $connection->get("statuses/user_timeline",["screen_name"=>$user,"count" => 3200, "max_id" => $id]);
+    }
+	fclose($fp);
+	$_SESSION['fileName']=$filename;
+	header("location:tweetsUploader.php");
 }
 ?>
