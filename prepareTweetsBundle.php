@@ -1,15 +1,4 @@
 <?php
-/**
- * @version 1.0
- * @package  Twitter Challenge
- * @category PHP
- * @author   Suraj kumar Singh <spsrga@gmail.com>
- * @since    24-08-2018
- * @link     https://surajkrsingh.000webhostapp.com/Twitter/
- *
- * Here prepare the download file for tweets in CVS.
- *
- **/
 session_start();
 error_reporting(0);
 include_once("includes/config.php");
@@ -22,10 +11,10 @@ $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $oauth_token, $oau
 		
 if(isset($connection))
 {
-	$user = $_REQUEST['screen_name'];
-	$fileName=$user."_tweets.csv";
-	$path='assets/tmp_data/'.$fileName;
-	$fp = fopen($filename, 'a');
+    $user = $_REQUEST['screen_name'];
+    $fileName=$user."_tweets.csv";
+    $path='assets/tmp_data/'.$fileName;
+    $fp = fopen($path, 'a');
     $data = array("Name", "Username", "Tweets", "CreatedOn");
     fputcsv($fp, $data);
     $tweets = $connection->get("statuses/user_timeline", ["screen_name"=>$user,"count" => 3200]);
