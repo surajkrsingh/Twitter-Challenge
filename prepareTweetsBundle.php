@@ -1,5 +1,5 @@
 <?php
-**
+/**
  * @version 1.0
  * @package  Twitter Challenge
  * @category PHP
@@ -30,10 +30,12 @@ if(isset($connection))
     fputcsv($fp, $data);
     $tweets = $connection->get("statuses/user_timeline", ["screen_name"=>$user,"count" => 3200]);
     $id ="";
-    while (true) {
-        if(isset($tweets->errors) && $id =="")
+    $page = 1;
+    while ($page < 16) {
+        $page++;
+        if(isset($tweets->errors))
         {
-            echo "Sry , try again after 15 min...";
+            //echo "Sry , try again after 15 min...";
             break;
         }else{
             foreach ($tweets as $temp) {
@@ -52,8 +54,7 @@ if(isset($connection))
         }
         $tweets = $connection->get("statuses/user_timeline",["screen_name"=>$user,"count" => 3200, "max_id" => $id]);
     }
-	fclose($fp);
-	$_SESSION['fileName']=$filename;
-	header("location:tweetsUploader.php");
+     fclose($fp);
+	header("Location:tweetsUploader.php?path=$path");
 }
 ?>
