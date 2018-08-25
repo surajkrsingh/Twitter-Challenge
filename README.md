@@ -40,6 +40,7 @@ This twitter challenge contain code that can retrieve user data after authentica
 		- css
 		- database
 		- img
+		- tmp_data
 	- bootstrap
 		- css
 		- js
