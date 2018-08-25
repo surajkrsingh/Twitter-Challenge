@@ -19,7 +19,7 @@ This twitter challenge contain code that can retrieve user data after authentica
 
 >#### LIVE DEMO :
 
-	**[Click here..](https://surajkrsingh.000webhostapp.com/Twitter/)**
+**[Click here..](https://surajkrsingh.000webhostapp.com/Twitter/)**
 	
 >#### QUICK START :
 
@@ -91,5 +91,4 @@ This twitter challenge contain code that can retrieve user data after authentica
 	
 
 	
-##### Thanks for visit... 
-:simple_smile: :simple_smile: :simple_smile:
+##### Thanks for visit...
