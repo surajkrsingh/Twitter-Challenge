@@ -53,7 +53,32 @@ This twitter challenge contain code that can retrieve user data after authentica
 		- fpdf
 		- google_lib (Google Auth Libraray)
 		- Sentiment Analysis
-		
+
+#### HOW TO SETUP | RUN
+   - Download [this](https://github.com/5uraj/Twitter-Challenge) github  repo.
+   - Change the authenticate info in config.php
+   
+        	define('CONSUMER_KEY', "PUT_CONSUMER_KEY_OF_YOUR_TWITTER_APP");
+	define('CONSUMER_SECRET', 'PUT_CONSUMER_SECRET_OF_YOUR_TWITTER_APP');
+	define('OAUTH_CALLBACK', 'PUT_CALLBACK_URL_OF_YOUR_TWITTER_APP');
+	    
+   - Set the Google Authentication Info in followersUploader.php and  tweetsUploader.php file
+      	
+	    	$client = new Google_Client();
+	    	$client->setClientId('PUT_GOOGLE_CLIENT_ID');
+	    	$client->setClientSecret('PUT_GOOGLE_CLIENT_SECRET');
+	    	$client->setRedirectUri('PUT_GOOGLE_REDIRECT_URL');
+	    	$client->setScopes(array('https://www.googleapis.com/auth/drive.file'));
+	    
+   - Import the database and Change the Users.php database configuration.
+   
+            $dbServer = 'host_name';
+            $dbUsername = 'database_username';
+            $dbPassword = 'password';
+            $dbName = 'database name';
+   
+   	        
+   
 #### ADDTIONAL TASK  :  
    - ##### Sentiment Analyser 
         - The sentiment analyse libaray is taken from the https://github.com/NickDuncanZA/php-sentiment-analyser and modfied the required funtion according the need of this project.
