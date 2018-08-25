@@ -1,6 +1,7 @@
 ![alt text](https://scrutinizer-ci.com/g/5uraj/Twitter-Challenge/badges/quality-score.png?b=master)
 ![alt text](https://scrutinizer-ci.com/g/5uraj/Twitter-Challenge/badges/build.png?b=master)
 ![alt text](https://scrutinizer-ci.com/g/5uraj/Twitter-Challenge/badges/code-intelligence.svg?b=master)
+![alt text](https://scrutinizer-ci.com/g/5uraj/Twitter-Challenge/badges/coverage.png?b=master)
 
 ## Twitter challenge ([My Twitter Application](https://surajkrsingh.000webhostapp.com/Twitter/))
  >**Author      : Suraj kumar singh**
