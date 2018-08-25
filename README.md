@@ -58,9 +58,9 @@ This twitter challenge contain code that can retrieve user data after authentica
    - Download [this](https://github.com/5uraj/Twitter-Challenge) github  repo.
    - Change the authenticate info in config.php
    
-        	define('CONSUMER_KEY', "PUT_CONSUMER_KEY_OF_YOUR_TWITTER_APP");
-	define('CONSUMER_SECRET', 'PUT_CONSUMER_SECRET_OF_YOUR_TWITTER_APP');
-	define('OAUTH_CALLBACK', 'PUT_CALLBACK_URL_OF_YOUR_TWITTER_APP');
+            define('CONSUMER_KEY', "PUT_CONSUMER_KEY_OF_YOUR_TWITTER_APP");
+	        define('CONSUMER_SECRET', 'PUT_CONSUMER_SECRET_OF_YOUR_TWITTER_APP');
+	        define('OAUTH_CALLBACK', 'PUT_CALLBACK_URL_OF_YOUR_TWITTER_APP');
 	    
    - Set the Google Authentication Info in followersUploader.php and  tweetsUploader.php file
       	
