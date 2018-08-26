@@ -64,7 +64,7 @@ This twitter challenge contain code that can retrieve user data after authentica
 
 >#### HOW TO SETUP | RUN
    - Download [this](https://github.com/5uraj/Twitter-Challenge) github  repo.
-   - Create a Twitter developer account  from [here](https://developer.twitter.com/en/apps)and get app authentication details.
+   - Create a Twitter developer account  from [here](https://developer.twitter.com/en/apps) and get app authentication details.
    - Change the authenticate info in config.php .
    
             define('CONSUMER_KEY', "PUT_CONSUMER_KEY_OF_YOUR_TWITTER_APP");
