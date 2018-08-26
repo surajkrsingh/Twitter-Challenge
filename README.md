@@ -92,6 +92,9 @@ This twitter challenge contain code that can retrieve user data after authentica
    - ##### scrutinizer [click here](https://scrutinizer-ci.com/g/5uraj/Twitter-Challenge/inspections/bb8c9ef9-8ce4-49f9-88d1-a4877cb62f70)
 
 >#### ADDTIONAL TASK  :  
+   - ##### Tweets Downloading
+   	- Tweets can be download up to 3200 of given user name.
+	- Downlaod can be done in CSV , XML and PDF as well as on Google drive.
    - ##### Sentiment Analyser 
         - The sentiment analyse libaray is taken from the https://github.com/NickDuncanZA/php-sentiment-analyser and modfied the required funtion according the need of this project.
         - Sentiment analyse is classified the tweet as Positive or Negative or Neutral.
