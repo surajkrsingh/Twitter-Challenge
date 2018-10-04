@@ -24,11 +24,11 @@ This twitter challenge contain code that can retrieve user data after authentica
 
 >#### LIVE DEMO :
 
-**[Click here..](https://surajkrsingh.000webhostapp.com/Twitter/)**
+**[Click here..](https://bitscamp.com/Twitter/index.php)**
 	
 >#### QUICK START :
 
- - Visit https://surajkrsingh.000webhostapp.com/Twitter/
+ - Visit https://bitscamp.com/Twitter/index.php
  - Click on login to twitter (This page lead you to twitter, where you have to authorise this application to go further).
  - After authorised with twitter, page will lead you to go home.
  - Can see the User profile information.
