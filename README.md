@@ -6,7 +6,7 @@
 ## Twitter challenge ([My Twitter Application](https://surajkrsingh.000webhostapp.com/Twitter/))
  >**Author      : Suraj kumar singh**
  
- >**Email       : spsrga176@gmail.com**
+ >**Email       : suraj.sk243@gmail.com**
  
  >**Follow   :  [Facebook](https://www.facebook.com/SurajSingh176) | [Twitter](https://twitter.com/Suraj_Kr_Singh) | [Linkedin](https://www.linkedin.com/in/suraj-kumar-singh/) | [Github](https://github.com/5uraj/) | [Hackerrank](https://www.hackerrank.com/singh_surajkumar)** 
 
